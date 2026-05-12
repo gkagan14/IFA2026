@@ -1,76 +1,28 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>2010 Pink - Schedule</title>
-        
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>2010 Pink</title>
 <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
-    .container { max-width: 1000px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
-    h2 { color: #444; margin-top: 30px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; margin-bottom: 20px; }
-    th, td { border: 1px solid #dee2e6; padding: 12px; text-align: left; }
-    th { background-color: #0056b3; color: white; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; }
-    tr:nth-child(even) { background-color: #f2f2f2; }
-    tr:hover { background-color: #e9ecef; }
-    .nav-container { background: #343a40; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
-    .nav { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; padding: 0 20px; }
-    .nav a { text-decoration: none; color: #adb5bd; font-size: 0.9rem; padding: 5px 10px; border-radius: 4px; transition: 0.3s; }
-    .nav a:hover, .nav a.active { color: white; background: #495057; }
-    .back-link { display: inline-block; margin-top: 20px; color: #0056b3; text-decoration: none; font-weight: bold; }
-    .time-val { font-weight: bold; color: #d9534f; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+    .nav-container { background: #2c3e50; padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .nav { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; padding: 0 20px; }
+    .nav a { text-decoration: none; color: #ecf0f1; font-size: 0.85rem; padding: 6px 12px; border-radius: 4px; transition: 0.2s; }
+    .nav a:hover { background: #34495e; }
+    .nav a.active { background: #3498db; color: white; font-weight: bold; }
+    .nav-section { width: 100%; color: #95a5a6; font-size: 0.7rem; text-transform: uppercase; margin-top: 10px; border-top: 1px solid #3e4f5f; padding-top: 5px; }
+    .container { max-width: 1200px; margin: 30px auto; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); }
+    h1 { color: #2c3e50; border-left: 6px solid #3498db; padding-left: 15px; margin-bottom: 25px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+    th, td { border: 1px solid #edf2f7; padding: 14px; text-align: left; }
+    th { background-color: #f8fafc; color: #64748b; text-transform: uppercase; font-size: 0.8rem; }
+    tr:hover { background-color: #f8fafc; }
+    .time-cell { font-weight: bold; color: #e74c3c; }
+    .map-link { color: #3498db; text-decoration: none; font-weight: 600; }
+    .map-link:hover { text-decoration: underline; }
+    .addr { color: #7f8c8d; font-size: 0.75rem; display: block; margin-top: 4px; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; text-decoration: none; color: inherit; transition: 0.2s; text-align: center; }
+    .card:hover { transform: translateY(-3px); border-color: #3498db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
 </style>
-
-    </head>
-    <body>
-        <div class="nav-container"><div class="nav"><a href="index.html" class="">Home</a><a href="2010_Pink.html" class="active">2010 Pink</a><a href="2011_Pink.html" class="">2011 Pink</a><a href="2012_Pink.html" class="">2012 Pink</a><a href="2013_Pink.html" class="">2013 Pink</a><a href="2014_Blue.html" class="">2014 Blue</a><a href="2014_Pink.html" class="">2014 Pink</a><a href="2015_Blue.html" class="">2015 Blue</a><a href="2015_Pink.html" class="">2015 Pink</a><a href="2016_Blue.html" class="">2016 Blue</a><a href="2016_Pink.html" class="">2016 Pink</a><a href="2017_Blue.html" class="">2017 Blue</a><a href="2017_Pink.html" class="">2017 Pink</a><a href="FINALS.html" class="">FINALS</a><a href="Semi_Finals.html" class="">Semi-Finals</a></div></div>
-        <div class="container">
-            <h1>Schedule: 2010 Pink</h1>
-            <table class="dataframe table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Date</th>
-      <th>Time (EST)</th>
-      <th>Home Team</th>
-      <th>Away Team</th>
-      <th>Field</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sat, May 23, 2026</td>
-      <td>2:10 PM</td>
-      <td>Ajax B2010</td>
-      <td>Bayside</td>
-      <td>SBLI Progin Park 14</td>
-    </tr>
-    <tr>
-      <td>Sun, May 24, 2026</td>
-      <td>8:00 AM</td>
-      <td>Ajax B2010</td>
-      <td>FC Stars</td>
-      <td>SBLI Progin Park 16</td>
-    </tr>
-    <tr>
-      <td>Sun, May 24, 2026</td>
-      <td>3:55 PM</td>
-      <td>Ajax B2010</td>
-      <td>Seacoast</td>
-      <td>SBLI Progin Park 13</td>
-    </tr>
-    <tr>
-      <td>Mon, May 25, 2026</td>
-      <td>9:40 AM</td>
-      <td>Ajax B2010 ****</td>
-      <td>NaN</td>
-      <td>FC Stars Complex 1</td>
-    </tr>
-  </tbody>
-</table>
-            <a href="index.html" class="back-link">← Back to Home</a>
-        </div>
-    </body>
-    </html>
-    
+</head><body><div class="nav-container"><div class="nav"><a href="index.html" class="">Home</a><a href="playoffs.html" class="">🏆 Playoffs</a><div class="nav-section">Dates</div><a href="date_2026-05-23.html" class="">Sat, May 23, 2026</a><a href="date_2026-05-24.html" class="">Sun, May 24, 2026</a><a href="date_2026-05-25.html" class="">Mon, May 25, 2026</a><div class="nav-section">Teams</div><a href="2010_Pink.html" class="active">2010 Pink</a><a href="2011_Pink.html" class="">2011 Pink</a><a href="2012_Pink.html" class="">2012 Pink</a><a href="2013_Pink.html" class="">2013 Pink</a><a href="2014_Blue.html" class="">2014 Blue</a><a href="2014_Pink.html" class="">2014 Pink</a><a href="2015_Blue.html" class="">2015 Blue</a><a href="2015_Pink.html" class="">2015 Pink</a><a href="2016_Blue.html" class="">2016 Blue</a><a href="2016_Pink.html" class="">2016 Pink</a><a href="2017_Blue.html" class="">2017 Blue</a><a href="2017_Pink.html" class="">2017 Pink</a><a href="FINALS.html" class="">FINALS</a><a href="Semi_Finals.html" class="">Semi-Finals</a></div></div>
+    <div class="container"><h1>Schedule: 2010 Pink</h1>
+    <table><thead><tr><th>Date</th><th>Time</th><th>Home</th><th>Away</th><th>Field (GPS)</th></tr></thead>
+    <tbody><tr><td>Sat, May 23, 2026</td><td class='time-cell'>2:10 PM</td><td>Ajax B2010</td><td>Bayside</td><td><a href="https://www.google.com/maps/search/?api=1&query=SBLI%20Progin%20Park%2014%20512%20Old%20Union%20Turnpike%2C%20Lancaster%2C%20MA%2001523" target="_blank" class="map-link">SBLI Progin Park 14</a><br><span class='addr'>512 Old Union Turnpike, Lancaster, MA 01523</span></td></tr><tr><td>Sun, May 24, 2026</td><td class='time-cell'>8:00 AM</td><td>Ajax B2010</td><td>FC Stars</td><td><a href="https://www.google.com/maps/search/?api=1&query=SBLI%20Progin%20Park%2016%20512%20Old%20Union%20Turnpike%2C%20Lancaster%2C%20MA%2001523" target="_blank" class="map-link">SBLI Progin Park 16</a><br><span class='addr'>512 Old Union Turnpike, Lancaster, MA 01523</span></td></tr><tr><td>Sun, May 24, 2026</td><td class='time-cell'>3:55 PM</td><td>Ajax B2010</td><td>Seacoast</td><td><a href="https://www.google.com/maps/search/?api=1&query=SBLI%20Progin%20Park%2013%20512%20Old%20Union%20Turnpike%2C%20Lancaster%2C%20MA%2001523" target="_blank" class="map-link">SBLI Progin Park 13</a><br><span class='addr'>512 Old Union Turnpike, Lancaster, MA 01523</span></td></tr><tr><td>Mon, May 25, 2026</td><td class='time-cell'>9:40 AM</td><td>Ajax B2010 ****</td><td>nan</td><td><a href="https://www.google.com/maps/search/?api=1&query=FC%20Stars%20Complex%201%201430%20Lunenburg%20Rd%2C%20Lancaster%2C%20MA%2001523" target="_blank" class="map-link">FC Stars Complex 1</a><br><span class='addr'>1430 Lunenburg Rd, Lancaster, MA 01523</span></td></tr></tbody></table>
+    </div></body></html>
